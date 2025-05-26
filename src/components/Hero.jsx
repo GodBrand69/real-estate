@@ -112,13 +112,7 @@ const Hero = () => {
               
               {/* Animated scan lines */}
               <div className="absolute inset-0 bg-[linear-gradient(transparent_0%,rgba(0,255,159,0.05)_50%,transparent_100%)] bg-[length:100%_8px] animate-scan"></div>
-              
-              {/* Holographic property overlay */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border-2 border-[#00ff9f]/30 rounded-lg">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#00ff9f]/10 to-transparent"></div>
-                <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_0%,rgba(0,255,159,0.1)_50%,transparent_100%)] animate-pulse"></div>
-              </div>
-              
+                            
               {/* Search Bar Overlay */}
               <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-full max-w-xl px-4">
                 <SearchBar onSearch={handleSearch} />

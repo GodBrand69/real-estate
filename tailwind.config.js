@@ -36,4 +36,16 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    'bg-[#00ff9f]',
+    'bg-[#00ffff]',
+    'text-[#00ff9f]',
+    'text-[#00ffff]',
+    'from-[#00ff9f]',
+    'to-[#00ffff]',
+    'hover:bg-[#00ff9f]',
+    'hover:bg-[#00ffff]',
+    'hover:text-[#00ff9f]',
+    'hover:text-[#00ffff]'
+  ]
 } 
