@@ -8,5 +8,16 @@ export default defineConfig({
   resolve: {
     preserveSymlinks: true,
     caseSensitive: true
+  },
+  build: {
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor': ['react', 'react-dom', 'react-router-dom'],
+          'styles': ['tailwindcss']
+        }
+      }
+    }
   }
 })
