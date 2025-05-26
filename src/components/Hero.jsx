@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Building, DollarSign, MapPin } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import SearchBar from './SearchBar';
+import heroImage from '../assets/hero.jpg';
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -100,7 +101,7 @@ const Hero = () => {
           >
             <div className="relative w-full h-[600px] rounded-2xl overflow-hidden border border-[#00ff9f]/20">
               <img
-                src="/src/assets/hero.jpg"
+                src={heroImage}
                 alt="Cyberpunk Real Estate"
                 className="w-full h-full object-cover"
               />
