@@ -50,7 +50,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Experience the next generation of property hunting with our AI-powered platform. Find your dream home in the digital age.
+              Experience the next generation of property hunting with our advanced platform. Find your dream home in the digital age.
             </motion.p>
 
             <motion.div
