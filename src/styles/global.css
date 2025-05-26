@@ -1,0 +1,176 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+:root {
+  --primary: #00ff9f;
+  --secondary: #ff00ff;
+  --accent: #00ffff;
+  --background: #0a0a0f;
+  --surface: #1a1a2e;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --border: #2a2a3a;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Cyberpunk Glow Effects */
+.glow {
+  box-shadow: 0 0 10px rgba(0, 255, 159, 0.5),
+              0 0 20px rgba(0, 255, 159, 0.3);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 159, 0.7),
+              0 0 30px rgba(0, 255, 159, 0.5);
+}
+
+/* Neon Text Effect */
+.neon-text {
+  text-shadow: 0 0 5px rgba(0, 255, 159, 0.5),
+               0 0 10px rgba(0, 255, 159, 0.3);
+}
+
+/* Cyberpunk Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Cyberpunk Button Styles */
+.cyber-button {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  color: var(--background);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cyber-button:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 159, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Cyberpunk Card Styles */
+.cyber-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.cyber-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 20px rgba(0, 255, 159, 0.2);
+}
+
+/* Cyberpunk Input Styles */
+.cyber-input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.cyber-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(0, 255, 159, 0.3);
+  outline: none;
+}
+
+/* Cyberpunk Link Styles */
+.cyber-link {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.cyber-link:hover {
+  color: var(--accent);
+  text-shadow: 0 0 5px rgba(0, 255, 159, 0.5);
+}
+
+/* Cyberpunk Grid Lines */
+.cyber-grid {
+  background-image: 
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+/* Cyberpunk Loading Animation */
+@keyframes cyber-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cyber-spinner {
+  border: 2px solid var(--surface);
+  border-top: 2px solid var(--primary);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: cyber-spin 1s linear infinite;
+}
+
+/* Cyberpunk Gradient Text */
+.cyber-gradient-text {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Cyberpunk Border Animation */
+@keyframes cyber-border {
+  0% {
+    border-color: var(--primary);
+  }
+  50% {
+    border-color: var(--accent);
+  }
+  100% {
+    border-color: var(--primary);
+  }
+}
+
+.cyber-border-animate {
+  animation: cyber-border 2s infinite;
+}
+
+/* Cyberpunk Background Pattern */
+.cyber-pattern {
+  background-color: var(--background);
+  background-image: 
+    radial-gradient(var(--primary) 1px, transparent 1px),
+    radial-gradient(var(--primary) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  opacity: 0.1;
+} 
