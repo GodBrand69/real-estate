@@ -18,7 +18,7 @@ const Footer = () => {
             </span>
           </Link>
             <p className="mt-4 text-[#b3b3b3] max-w-md">
-              Experience the future of real estate with our AI-powered platform. Find your dream property in the digital age.
+              Experience the future of real estate with our advanced platform. Find your dream property in the digital age.
             </p>
           </div>
 
