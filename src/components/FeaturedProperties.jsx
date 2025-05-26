@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { mockProperties } from '../data/mockData';
-import PropertyCard from './properties/Propertycard';
+import PropertyCard from './properties/PropertyCard';
 
 const FeaturedProperties = () => {
   // Get first 3 properties
